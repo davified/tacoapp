@@ -12,4 +12,5 @@ Starting the application:
 3) `cd tacoapp`
 4) `createdb tacos_development`
 5) `sequelize db:migrate`
-6) Go to `localhost:3000` or `localhost:3000/tacos` and create tacos!
+6) `npm start`
+7) Go to `localhost:3000` or `localhost:3000/tacos` and create tacos!
