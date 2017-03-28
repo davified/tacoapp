@@ -14,3 +14,7 @@ Starting the application:
 5) `sequelize db:migrate`
 6) `npm start`
 7) Go to `localhost:3000` or `localhost:3000/tacos` and create tacos!
+
+### Acknowledgements
+
+This [codebase](https://github.com/WDI-SEA/tacoapp) is created by [General Assembly Seattle](https://github.com/WDI-SEA/).
