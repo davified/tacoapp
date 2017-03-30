@@ -18,3 +18,5 @@ Starting the application:
 ### Acknowledgements
 
 This [codebase](https://github.com/WDI-SEA/tacoapp) is created by [General Assembly Seattle](https://github.com/WDI-SEA/).
+
+TODO: davidtan [2017-03-28]: Figure out how to run `sequelize db:migrate` on Beanstalk instance
