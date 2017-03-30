@@ -16,10 +16,10 @@ Starting the application:
 7) Go to `localhost:3000` or `localhost:3000/tacos` and create tacos!
 
 Note:
-When running this on Elastic Beanstalk for the first time, you need to add the following to `.ebextensions/node-settings.config`:
+When running this on Elastic Beanstalk for the first time, you need to add the following to `.ebextensions/node-settings.config` before step_01 and step_03. The `initdb` command only needs to run once after installation of postgres:
 ```
 02_init_postgres:
-	command: "sudo service postgresql initdb"
+	command: "service postgresql initdb"
 ```
 
 ### Acknowledgements
