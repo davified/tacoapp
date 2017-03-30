@@ -15,6 +15,13 @@ Starting the application:
 6) `npm start`
 7) Go to `localhost:3000` or `localhost:3000/tacos` and create tacos!
 
+Note:
+When running this on Elastic Beanstalk for the first time, you need to add the following to `.ebextensions/node-settings.config`:
+```
+02_init_postgres:
+	command: "sudo service postgresql initdb"
+```
+
 ### Acknowledgements
 
 This [codebase](https://github.com/WDI-SEA/tacoapp) is created by [General Assembly Seattle](https://github.com/WDI-SEA/).
