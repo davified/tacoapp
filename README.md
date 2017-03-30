@@ -20,6 +20,9 @@ When running this on Elastic Beanstalk for the first time, you need to add the f
 ```
 02_init_postgres:
 	command: "service postgresql initdb"
+
+03_create_postgres_root_user:
+  command: "sudo -u postgres createuser root"
 ```
 
 ### Acknowledgements
