@@ -15,6 +15,8 @@ Starting the application:
 6) `npm start`
 7) Go to `localhost:3000` or `localhost:3000/tacos` and create tacos!
 
+TODO: davidtan [2017-03-31]: Connect RDS instance to beanstalk application: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html?icmpid=docs_elasticbeanstalk_console
+
 Note:
 When running this on Elastic Beanstalk for the first time, you need to add the following to `.ebextensions/node-settings.config` before step_01 and step_03. The `initdb` command only needs to run once after installation of postgres:
 ```
