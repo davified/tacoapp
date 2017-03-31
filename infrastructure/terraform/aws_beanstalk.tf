@@ -18,3 +18,13 @@ resource "aws_elastic_beanstalk_environment" "tacoapp-env" {
   application         = "${aws_elastic_beanstalk_application.tacoapp.name}"
   solution_stack_name = "64bit Amazon Linux 2016.09 v4.0.0 running Node.js"
 }
+
+resource "aws_db_instance" "tacoappdb" {
+  allocated_storage    = 5
+  storage_type         = "gp2"
+  engine               = "postgres"
+  instance_class       = "db.t2.micro"
+  name                 = "tacoappdb"
+  username             = "root"
+  password             = "password"
+}
