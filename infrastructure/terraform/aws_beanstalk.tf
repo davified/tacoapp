@@ -24,7 +24,16 @@ resource "aws_db_instance" "tacoappdb" {
   storage_type         = "gp2"
   engine               = "postgres"
   instance_class       = "db.t2.micro"
-  name                 = "tacoappdb"
+  name                 = "ebdb"
   username             = "root"
   password             = "password"
+  vpc_security_group_ids = ["${}"]
+}
+
+resource "aws_db_security_group" "tacoappdb-security" {
+  name = "tacoappdb-security"
+
+  ingress {
+    cidr = "10.0.0.0/24"
+  }
 }
