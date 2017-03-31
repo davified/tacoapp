@@ -25,6 +25,13 @@ When running this on Elastic Beanstalk for the first time, you need to add the f
   command: "sudo -u postgres createuser root"
 ```
 
+```
+container_commands:
+  01_createdb:
+    command: "sudo createdb tacos_development"
+
+```
+
 ### Acknowledgements
 
 This [codebase](https://github.com/WDI-SEA/tacoapp) is created by [General Assembly Seattle](https://github.com/WDI-SEA/).
