@@ -27,7 +27,7 @@ resource "aws_db_instance" "tacoappdb" {
   name                 = "ebdb"
   username             = "root"
   password             = "password"
-  vpc_security_group_ids = ["${}"]
+  /*vpc_security_group_ids = ["${}"]*/
 }
 
 resource "aws_db_security_group" "tacoappdb-security" {
